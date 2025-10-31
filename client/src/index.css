@@ -114,6 +114,7 @@
 @layer base {
   html {
     font-family: var(--font-barlow), sans-serif;
+    background-color: black;
   }
   * {
     @apply border-border outline-ring/50;
