@@ -1,17 +1,23 @@
-import { Spotlight } from "@/components/ui/spotlight-new";
+import Button from "./Button";
+import { Spotlight } from "./ui/spotlight-new";
+import { TextGenerateEffect } from "./ui/text-generate-effect";
+import { FaLocationArrow } from "react-icons/fa6";
+
+const words = "Hi! I'm Daniyal, a Full Stack Web Developer based in Pakistan";
 
 const Hero = () => {
   return (
-    <div className="h-160 w-full rounded-md flex md:items-center md:justify-center bg-black/96 antialiased bg-grid-white/[0.02] relative overflow-hidden">
+    <div className="pb-20 pt-36">
       <Spotlight />
-      <div className=" p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
+      <div className="flex flex-col items-center justify-center p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
         <h1 className="text-4xl md:text-7xl font-bold text-center bg-clip-text text-transparent bg-linear-to-b from-neutral-50 to-neutral-400 bg-opacity-50">
-          Spotlight <br /> which is not overused.
+          Transforming Ideas into Seamless User Experiences
         </h1>
-        <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
-          A subtle yet effective spotlight effect, because the previous version
-          is used a bit too much these days.
-        </p>
+        <TextGenerateEffect
+          words={words}
+          className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto"
+        />
+        <Button position="right" title="My work" icon={<FaLocationArrow />} />
       </div>
     </div>
   );
