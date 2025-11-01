@@ -198,33 +198,76 @@ const SkeletonFour = () => {
 
 const testimonials = [
   {
-    quote:
-      "It was the best of times, it was the worst of times, it was the age of wisdom, it was the age of foolishness, it was the epoch of belief, it was the epoch of incredulity, it was the season of Light, it was the season of Darkness, it was the spring of hope, it was the winter of despair.",
-    name: "Charles Dickens",
-    title: "A Tale of Two Cities",
+    svg: "/js.svg",
+    name: "JavaScript",
   },
   {
-    quote:
-      "To be, or not to be, that is the question: Whether 'tis nobler in the mind to suffer The slings and arrows of outrageous fortune, Or to take Arms against a Sea of troubles, And by opposing end them: to die, to sleep.",
-    name: "William Shakespeare",
-    title: "Hamlet",
+    svg: "/ts.svg",
+    name: "TypeScript",
   },
   {
-    quote: "All that we see or seem is but a dream within a dream.",
-    name: "Edgar Allan Poe",
-    title: "A Dream Within a Dream",
+    svg: "/nodejs.svg",
+    name: "Node JS",
   },
   {
-    quote:
-      "It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.",
-    name: "Jane Austen",
-    title: "Pride and Prejudice",
+    svg: "/react.svg",
+    name: "React",
   },
   {
-    quote:
-      "Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.",
-    name: "Herman Melville",
-    title: "Moby-Dick",
+    svg: "/mongodb.svg",
+    name: "Mongo DB",
+  },
+  {
+    svg: "/express.svg",
+    name: "Express JS",
+  },
+  {
+    svg: "/linux.svg",
+    name: "Linux",
+  },
+  {
+    svg: "/arch.svg",
+    name: "Arch Linux",
+  },
+  {
+    svg: "/api.svg",
+    name: "REST API",
+  },
+  {
+    svg: "/css.svg",
+    name: "CSS",
+  },
+  {
+    svg: "/git.svg",
+    name: "Git",
+  },
+  {
+    svg: "/github.svg",
+    name: "Github",
+  },
+  {
+    svg: "/html.svg",
+    name: "HTML",
+  },
+  {
+    svg: "/materialui.svg",
+    name: "Material UI",
+  },
+  {
+    svg: "/postgresql.svg",
+    name: "PostgreSQL",
+  },
+  {
+    svg: "/redux.svg",
+    name: "Redux Toolkit",
+  },
+  {
+    svg: "/npm.svg",
+    name: "NPM",
+  },
+  {
+    svg: "/tailwind.svg",
+    name: "Tailwind CSS",
   },
 ];
 
@@ -235,10 +278,15 @@ const SkeletonFive = () => {
       whileHover="animate"
       className="flex flex-1 w-full h-full min-h-24 dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
-      <div className="h-160 rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
+      <div className="h-50 rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
         <InfiniteMovingCards
           items={testimonials}
           direction="right"
+          speed="slow"
+        />
+        <InfiniteMovingCards
+          items={testimonials}
+          direction="left"
           speed="slow"
         />
       </div>

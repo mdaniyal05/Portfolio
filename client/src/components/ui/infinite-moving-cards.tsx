@@ -4,14 +4,13 @@ import React, { useEffect, useState } from "react";
 export const InfiniteMovingCards = ({
   items,
   direction = "left",
-  speed = "fast",
+  speed = "slow",
   pauseOnHover = true,
   className,
 }: {
   items: {
-    quote: string;
+    svg: string;
     name: string;
-    title: string;
   }[];
   direction?: "left" | "right";
   speed?: "fast" | "normal" | "slow";
@@ -56,14 +55,15 @@ export const InfiniteMovingCards = ({
       }
     }
   };
+
   const getSpeed = () => {
     if (containerRef.current) {
       if (speed === "fast") {
-        containerRef.current.style.setProperty("--animation-duration", "60s");
+        containerRef.current.style.setProperty("--animation-duration", "150s");
       } else if (speed === "normal") {
-        containerRef.current.style.setProperty("--animation-duration", "120s");
+        containerRef.current.style.setProperty("--animation-duration", "250s");
       } else {
-        containerRef.current.style.setProperty("--animation-duration", "180s");
+        containerRef.current.style.setProperty("--animation-duration", "500s");
       }
     }
   };
@@ -85,14 +85,15 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item) => (
           <li
-            className="relative w-[100px] max-w-full shrink-0 rounded-2xl border border-zinc-200 bg-black px-8 py-3 md:w-[150px]"
+            className="relative w-[200px] max-w-full shrink-0 rounded-4xl border bg-neutral-800 border-zinc-100 p-2"
             key={item.name}
           >
-            <blockquote className="flex justify-center items-center">
-              <span className="relative text-center z-20 text-sm leading-[1.6] font-normal text-neutral-400 dark:text-gray-100">
-                hello
+            <div className="flex justify-center items-center gap-2.5">
+              <img src={item.svg} alt={item.name} width={30} height={30} />
+              <span className="relative text-center z-20 text-sm leading-[1.6] font-normal text-neutral-300">
+                {item.name}
               </span>
-            </blockquote>
+            </div>
           </li>
         ))}
       </ul>
