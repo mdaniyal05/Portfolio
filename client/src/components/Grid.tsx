@@ -13,7 +13,7 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 export default function BentoGridThirdDemo() {
   return (
-    <BentoGrid className="max-w-6xl mx-auto md:auto-rows-[21rem]">
+    <BentoGrid className="max-w-7xl mx-auto md:auto-rows-[23rem]">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -196,7 +196,7 @@ const SkeletonFour = () => {
   );
 };
 
-const testimonials = [
+const tools1 = [
   {
     svg: "/js.svg",
     name: "JavaScript",
@@ -245,6 +245,9 @@ const testimonials = [
     svg: "/github.svg",
     name: "Github",
   },
+];
+
+const tools2 = [
   {
     svg: "/html.svg",
     name: "HTML",
@@ -269,6 +272,30 @@ const testimonials = [
     svg: "/tailwind.svg",
     name: "Tailwind CSS",
   },
+  {
+    svg: "/java.svg",
+    name: "Java",
+  },
+  {
+    svg: "/mongoose.svg",
+    name: "Mongoose",
+  },
+  {
+    svg: "/motion.svg",
+    name: "Framer Motion",
+  },
+  {
+    svg: "/nextjs.svg",
+    name: "Next JS",
+  },
+  {
+    svg: "/python.svg",
+    name: "Python",
+  },
+  {
+    svg: "/sequelize.svg",
+    name: "Sequelize",
+  },
 ];
 
 const SkeletonFive = () => {
@@ -279,16 +306,8 @@ const SkeletonFive = () => {
       className="flex flex-1 w-full h-full min-h-24 dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
       <div className="h-50 rounded-md flex flex-col antialiased items-center justify-center relative overflow-hidden">
-        <InfiniteMovingCards
-          items={testimonials}
-          direction="right"
-          speed="slow"
-        />
-        <InfiniteMovingCards
-          items={testimonials}
-          direction="left"
-          speed="slow"
-        />
+        <InfiniteMovingCards items={tools1} direction="right" speed="slow" />
+        <InfiniteMovingCards items={tools2} direction="left" speed="slow" />
       </div>
     </motion.div>
   );
@@ -342,7 +361,7 @@ const items = [
     title: "Ardent",
     description: (
       <span className="text-sm">
-        Zealous about cutting-edge technologies and features
+        Zealous about cutting-edge technologies and tools
       </span>
     ),
     header: <SkeletonFive />,
