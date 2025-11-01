@@ -1,18 +1,18 @@
-"use client";
+import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 import {
   IconBoxAlignRightFilled,
-  IconClipboardCopy,
-  IconFileBroken,
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
 import { motion } from "motion/react";
+import { FaHandsHelping, FaProjectDiagram, FaCopy } from "react-icons/fa";
+import Button from "./Button";
 
 export default function BentoGridThirdDemo() {
   return (
-    <BentoGrid className="max-w-4xl mx-auto md:auto-rows-[20rem]">
+    <BentoGrid className="max-w-6xl mx-auto md:auto-rows-[21rem]">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
@@ -33,20 +33,8 @@ const SkeletonOne = () => {
       x: 0,
     },
     animate: {
-      x: 10,
+      y: 10,
       rotate: 5,
-      transition: {
-        duration: 0.2,
-      },
-    },
-  };
-  const variantsSecond = {
-    initial: {
-      x: 0,
-    },
-    animate: {
-      x: -10,
-      rotate: -5,
       transition: {
         duration: 0.2,
       },
@@ -55,73 +43,46 @@ const SkeletonOne = () => {
 
   return (
     <motion.div
+      variants={variants}
       initial="initial"
       whileHover="animate"
-      className="flex flex-1 w-full h-full min-h-24 dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
+      className="flex w-full h-full justify-center items-center min-h-24 dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
-      <motion.div
-        variants={variants}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/20 p-2  items-center space-x-2 bg-white dark:bg-black"
-      >
-        <div className="h-6 w-6 rounded-full bg-linear-to-r from-pink-500 to-violet-500 shrink-0" />
-        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
-      </motion.div>
-      <motion.div
-        variants={variantsSecond}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/20 p-2 items-center space-x-2 w-3/4 ml-auto bg-white dark:bg-black"
-      >
-        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
-        <div className="h-6 w-6 rounded-full bg-linear-to-r from-pink-500 to-violet-500 shrink-0" />
-      </motion.div>
-      <motion.div
-        variants={variants}
-        className="flex flex-row rounded-full border border-neutral-100 dark:border-white/20 p-2 items-center space-x-2 bg-white dark:bg-black"
-      >
-        <div className="h-6 w-6 rounded-full bg-linear-to-r from-pink-500 to-violet-500 shrink-0" />
-        <div className="w-full bg-gray-100 h-4 rounded-full dark:bg-neutral-900" />
-      </motion.div>
+      <img
+        src="/me.jpg"
+        className="h-40 w-40 rounded-full animate-[spin_30s_linear_infinite]"
+      />
     </motion.div>
   );
 };
+
 const SkeletonTwo = () => {
-  const variants = {
-    initial: {
-      width: 0,
-    },
-    animate: {
-      width: "100%",
-      transition: {
-        duration: 0.2,
-      },
-    },
-    hover: {
-      width: ["0%", "100%"],
-      transition: {
-        duration: 2,
-      },
-    },
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    const text = "mdaniyal5454@gmail.com";
+    navigator.clipboard.writeText(text);
+    setCopied(true);
   };
-  const arr = new Array(6).fill(0);
+
   return (
     <motion.div
       initial="initial"
       animate="animate"
       whileHover="hover"
-      className="flex flex-1 w-full h-full min-h-24 dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
+      className="flex flex-1 justify-center items-center w-full h-full min-h-24 dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
-      {arr.map((_, i) => (
-        <motion.div
-          key={"skelenton-two" + i}
-          variants={variants}
-          style={{
-            maxWidth: Math.random() * (100 - 40) + 40 + "%",
-          }}
-          className="flex flex-row rounded-full border border-neutral-100 dark:border-white/20 p-2  items-center space-x-2 bg-neutral-100 dark:bg-black w-full h-4"
-        ></motion.div>
-      ))}
+      <Button
+        title={copied ? "Email is Copied!" : "mdaniyal5454@gmail.com"}
+        icon={<FaCopy />}
+        position="left"
+        handleClick={handleCopy}
+        otherClasses="!bg-[#161A31]"
+      />
     </motion.div>
   );
 };
+
 const SkeletonThree = () => {
   const variants = {
     initial: {
@@ -292,28 +253,27 @@ const SkeletonFive = () => {
     </motion.div>
   );
 };
+
 const items = [
   {
-    title: "AI Content Generation",
+    title: "Collaboration",
     description: (
       <span className="text-sm">
-        Experience the power of AI in generating unique content.
+        I prioritize client collaboration, fostering open communication
       </span>
     ),
     header: <SkeletonOne />,
     className: "md:col-span-1",
-    icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    icon: <FaHandsHelping className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Automated Proofreading",
+    title: "Team Up",
     description: (
-      <span className="text-sm">
-        Let AI handle the proofreading of your documents.
-      </span>
+      <span className="text-sm">Let's work together on your next project</span>
     ),
     header: <SkeletonTwo />,
     className: "md:col-span-1",
-    icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    icon: <FaProjectDiagram className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "Contextual Suggestions",
@@ -328,11 +288,7 @@ const items = [
   },
   {
     title: "Sentiment Analysis",
-    description: (
-      <span className="text-sm">
-        Understand the sentiment of your text with AI analysis.
-      </span>
-    ),
+    description: <span className="text-sm"></span>,
     header: <SkeletonFour />,
     className: "md:col-span-2",
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
