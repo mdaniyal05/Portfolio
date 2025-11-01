@@ -35,11 +35,11 @@ const Grid4 = () => {
         className="h-full w-1/3 rounded-2xl bg-black p-4 dark:bg-black dark:border-white/10 border border-neutral-200 flex flex-col items-center justify-center"
       >
         <img
-          src="/dollar.svg"
+          src="/browser1.svg"
           alt="avatar"
           height="100"
           width="100"
-          className="rounded-full h-20 w-20 bg-white"
+          className="rounded-full h-20 w-20 bg-cover p-1 animate-[spin_20s_linear_infinite]"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-300 mt-4">
           Websites that stand out
@@ -50,11 +50,11 @@ const Grid4 = () => {
       </motion.div>
       <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-black p-4 dark:bg-black dark:border-white/10 border border-neutral-200 flex flex-col items-center justify-center">
         <img
-          src="/bolt.svg"
+          src="/browser2.svg"
           alt="avatar"
           height="100"
           width="100"
-          className="rounded-full h-20 w-20 bg-white"
+          className="rounded-full h-20 w-20 p-1 animate-[spin_20s_linear_infinite]"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-300 mt-4">
           Websites that make a difference
@@ -68,11 +68,11 @@ const Grid4 = () => {
         className="h-full w-1/3 rounded-2xl bg-black p-4 dark:bg-black dark:border-white/10 border border-neutral-200 flex flex-col items-center justify-center"
       >
         <img
-          src="/sword.svg"
+          src="/browser3.svg"
           alt="avatar"
           height="100"
           width="100"
-          className="rounded-full h-20 w-20 bg-white p-2"
+          className="rounded-full h-20 w-20  p-1 animate-[spin_20s_linear_infinite]"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-neutral-300 mt-4">
           Websites that present your brand the best
