@@ -1,7 +1,6 @@
 import Hero from "./components/Hero";
 import { FloatingNav } from "./components/ui/floating-navbar";
-import Grid from "./components/Grid";
-
+import BentoGridComp from "./components/Grid";
 
 const navItems = [
   {
@@ -28,7 +27,7 @@ function App() {
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems} />
         <Hero />
-        <Grid />
+        <BentoGridComp />
       </div>
     </main>
   );
