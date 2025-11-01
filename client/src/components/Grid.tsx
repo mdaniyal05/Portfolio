@@ -13,7 +13,7 @@ import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 
 export default function BentoGridThirdDemo() {
   return (
-    <BentoGrid className="max-w-7xl mx-auto md:auto-rows-[23rem]">
+    <BentoGrid className="max-w-7xl h-screen mx-auto md:auto-rows-[23rem]">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
