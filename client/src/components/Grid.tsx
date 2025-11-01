@@ -1,13 +1,15 @@
 import { useState } from "react";
 import { cn } from "@/lib/utils";
 import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
-import {
-  IconBoxAlignRightFilled,
-  IconSignature,
-  IconTableColumn,
-} from "@tabler/icons-react";
 import { motion } from "motion/react";
-import { FaHandsHelping, FaProjectDiagram, FaCopy } from "react-icons/fa";
+import {
+  FaHandsHelping,
+  FaProjectDiagram,
+  FaCopy,
+  FaGlobe,
+  FaLaptopCode,
+} from "react-icons/fa";
+import { GrTechnology } from "react-icons/gr";
 import Button from "./Button";
 import { InfiniteMovingCards } from "./ui/infinite-moving-cards";
 import { GlobeDemo } from "../components/Globe";
@@ -314,7 +316,8 @@ const items = [
     title: "Collaboration",
     description: (
       <span className="text-sm">
-        I prioritize client collaboration, fostering open communication
+        Collaboration is at the heart of my work - I prioritize strong client
+        partnerships and open communication to achieve the best results.
       </span>
     ),
     header: <SkeletonOne />,
@@ -325,7 +328,8 @@ const items = [
     title: "Team Up",
     description: (
       <span className="text-sm">
-        Let's work together on your next project and bring your ideas to life
+        Ready to create something amazing together? Partner with me on your next
+        big idea - together, we’ll make it happen.
       </span>
     ),
     header: <SkeletonTwo />,
@@ -342,29 +346,31 @@ const items = [
     ),
     header: <SkeletonThree />,
     className: "md:col-span-1",
-    icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+    icon: <FaGlobe className="h-4 w-4 text-neutral-500" />,
   },
   {
     title: "Building Websites",
     description: (
       <span className="text-sm">
-        I build scalable, efficient and user-friendly web applications
+        I develop robust, scalable, and intuitive web applications optimized for
+        performance and usability.
       </span>
     ),
     header: <SkeletonFour />,
     className: "md:col-span-2",
-    icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
+    icon: <FaLaptopCode className="h-4 w-4 text-neutral-500" />,
   },
 
   {
     title: "Ardent",
     description: (
       <span className="text-sm">
-        Zealous about cutting-edge technologies and tools
+        Passionate and Driven by curiosity about exploring and mastering
+        cutting-edge technologies and tools.
       </span>
     ),
     header: <SkeletonFive />,
     className: "md:col-span-1",
-    icon: <IconBoxAlignRightFilled className="h-4 w-4 text-neutral-500" />,
+    icon: <GrTechnology className="h-4 w-4 text-neutral-500" />,
   },
 ];
