@@ -77,7 +77,6 @@ const SkeletonTwo = () => {
         icon={<FaCopy />}
         position="left"
         handleClick={handleCopy}
-        otherClasses="!bg-[#161A31]"
       />
     </motion.div>
   );
@@ -143,53 +142,53 @@ const SkeletonFour = () => {
     >
       <motion.div
         variants={first}
-        className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/10 border border-neutral-200 flex flex-col items-center justify-center"
+        className="h-full w-1/3 rounded-2xl bg-black p-4 dark:bg-black dark:border-white/10 border border-neutral-200 flex flex-col items-center justify-center"
       >
         <img
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          src="/dollar.svg"
           alt="avatar"
           height="100"
           width="100"
-          className="rounded-full h-10 w-10"
+          className="rounded-full h-20 w-20 bg-white"
         />
-        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          Just code in Vanilla Javascript
+        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-300 mt-4">
+          Websites that stand out
         </p>
         <p className="border border-red-500 bg-red-100 dark:bg-red-900/20 text-red-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Delusional
+          Leading
         </p>
       </motion.div>
-      <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/10 border border-neutral-200 flex flex-col items-center justify-center">
+      <motion.div className="h-full relative z-20 w-1/3 rounded-2xl bg-black p-4 dark:bg-black dark:border-white/10 border border-neutral-200 flex flex-col items-center justify-center">
         <img
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          src="/bolt.svg"
           alt="avatar"
           height="100"
           width="100"
-          className="rounded-full h-10 w-10"
+          className="rounded-full h-20 w-20 bg-white"
         />
-        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          Tailwind CSS is cool, you know
+        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-300 mt-4">
+          Websites that make a difference
         </p>
         <p className="border border-green-500 bg-green-100 dark:bg-green-900/20 text-green-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Sensible
+          Top
         </p>
       </motion.div>
       <motion.div
         variants={second}
-        className="h-full w-1/3 rounded-2xl bg-white p-4 dark:bg-black dark:border-white/10 border border-neutral-200 flex flex-col items-center justify-center"
+        className="h-full w-1/3 rounded-2xl bg-black p-4 dark:bg-black dark:border-white/10 border border-neutral-200 flex flex-col items-center justify-center"
       >
         <img
-          src="https://pbs.twimg.com/profile_images/1417752099488636931/cs2R59eW_400x400.jpg"
+          src="/sword.svg"
           alt="avatar"
           height="100"
           width="100"
-          className="rounded-full h-10 w-10"
+          className="rounded-full h-20 w-20 bg-white p-2"
         />
-        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-500 mt-4">
-          I love angular, RSC, and Redux.
+        <p className="sm:text-sm text-xs text-center font-semibold text-neutral-300 mt-4">
+          Websites that present your brand the best
         </p>
         <p className="border border-orange-500 bg-orange-100 dark:bg-orange-900/20 text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
-          Helpless
+          Supreme
         </p>
       </motion.div>
     </motion.div>
@@ -287,18 +286,22 @@ const items = [
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
   {
-    title: "Sentiment Analysis",
-    description: <span className="text-sm"></span>,
+    title: "Building Websites",
+    description: (
+      <span className="text-sm">
+        I build scalable, efficient and user-friendly web applications
+      </span>
+    ),
     header: <SkeletonFour />,
     className: "md:col-span-2",
     icon: <IconTableColumn className="h-4 w-4 text-neutral-500" />,
   },
 
   {
-    title: "Text Summarization",
+    title: "Ardent",
     description: (
       <span className="text-sm">
-        Summarize your lengthy documents with AI technology.
+        Zealous about cutting-edge technologies and features
       </span>
     ),
     header: <SkeletonFive />,
