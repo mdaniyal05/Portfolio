@@ -1,7 +1,7 @@
 import Hero from "./components/Hero";
 import { FloatingNav } from "./components/ui/floating-navbar";
 import Grid from "./components/Grid";
-import { GlobeDemo } from "./components/Globe";
+
 
 const navItems = [
   {
@@ -29,7 +29,6 @@ function App() {
         <FloatingNav navItems={navItems} />
         <Hero />
         <Grid />
-        <GlobeDemo />
       </div>
     </main>
   );
