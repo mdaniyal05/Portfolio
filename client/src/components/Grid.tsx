@@ -79,7 +79,7 @@ const items = [
 
 function BentoGridComp() {
   return (
-    <BentoGrid className="max-w-7xl mx-auto md:auto-rows-[23rem]">
+    <BentoGrid className="max-w-7xl mx-auto py-36 md:auto-rows-[23rem]">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}

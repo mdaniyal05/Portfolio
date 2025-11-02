@@ -20,37 +20,32 @@ const projects = [
 
 export default function AnimatedPin() {
   return (
-    <div className="py-20 h-screen">
-      <h1 className="heading text-neutral-200 text-3xl text-center">
-        A Selection of <span className="text-purple-400">My Work</span>
+    <div className="py-20 flex flex-col justify-center items-center">
+      <h1 className="heading text-textColor font-bold text-4xl text-center">
+        A Selection of <span className="text-secondaryColor">My Work</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-16">
         {projects.map((item) => (
           <div
-            className="lg:min-h-130 h-100 flex items-center justify-center sm:w-96 w-[80vw]"
+            className="lg:min-h-130 h-150 flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
             <PinContainer title={item.link} href={item.link}>
-              <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+              <div className="relative rounded-2xl flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
                 >
-                  <img src="/bg.png" alt="bgimg" />
+                  <img src={item.img} alt="cover" className="bg-cover" />
                 </div>
-                <img
-                  src={item.img}
-                  alt="cover"
-                  className="z-10 absolute bottom-0"
-                />
               </div>
 
-              <h1 className="font-bold lg:text-2xl text-neutral-500 md:text-xl text-base line-clamp-2">
+              <h1 className="font-bold lg:text-2xl text-secondaryColor md:text-xl text-base">
                 {item.title}
               </h1>
 
               <p
-                className="lg:text-xl lg:font-normal font-light text-neutral-300 text-sm line-clamp-4"
+                className="font-medium text-textColor text-sm"
                 style={{
                   color: "#BEC1DD",
                   margin: "1vh 0",
@@ -64,7 +59,7 @@ export default function AnimatedPin() {
                   {item.iconLists.map((icon, index) => (
                     <div
                       key={index}
-                      className="border rounded-full bg-neutral-700 border-zinc-100 lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                      className="border rounded-full bg-primaryColor border-secondaryColor lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                       style={{
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
@@ -75,10 +70,10 @@ export default function AnimatedPin() {
                 </div>
 
                 <div className="flex justify-center items-center">
-                  <p className="flex lg:text-xl md:text-xs text-sm text-purple-400">
+                  <p className="flex lg:text-[1.1rem] md:text-xs text-sm text-accentColor">
                     Check Live Site
                   </p>
-                  <FaLocationArrow className="ms-3" color="#CBACF9" />
+                  <FaLocationArrow className="ms-3 text-accentColor" />
                 </div>
               </div>
             </PinContainer>

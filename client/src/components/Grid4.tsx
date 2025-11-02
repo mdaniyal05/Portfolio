@@ -28,7 +28,7 @@ const Grid4 = () => {
       initial="initial"
       animate="animate"
       whileHover="hover"
-      className="flex flex-1 w-full h-full min-h-24 dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-row space-x-2"
+      className="flex flex-1 justify-center items-center w-full h-full min-h-24 dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-row space-x-2"
     >
       <motion.div
         variants={first}
@@ -48,7 +48,7 @@ const Grid4 = () => {
           Leading
         </p>
       </motion.div>
-      <motion.div className="h-full relative z-20 w-1/3 bg-primaryColor rounded-2xl p-4 border border-secondaryColor flex flex-col items-center justify-center">
+      <motion.div className="h-full hidden lg:flex relative z-20 w-1/3 bg-primaryColor rounded-2xl p-4 border border-secondaryColor flex-col items-center justify-center">
         <img
           src="/browser2.svg"
           alt="avatar"
