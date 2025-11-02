@@ -64,7 +64,7 @@ export default function AnimatedPin() {
                   {item.iconLists.map((icon, index) => (
                     <div
                       key={index}
-                      className="border border-white/20 rounded-full bg-neutral-600 lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                      className="border rounded-full bg-neutral-700 border-zinc-100 lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                       style={{
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}

@@ -1,8 +1,16 @@
-@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
+
+@theme {
+  --color-primaryColor: #19183B;
+  --color-secondaryColor: #708993;
+  --color-accentColor: #A1C2BD;
+  --color-textColor: #E7F2EF;
+  --font-orbitron: "Orbitron", sans-serif;
+}
 
 @theme inline {
   --animate-scroll: scroll var(--animation-duration, 40s)
@@ -122,8 +130,10 @@
 
 @layer base {
   html {
-    font-family: var(--font-barlow), sans-serif;
-    background-color: black;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
   }
   * {
     @apply border-border outline-ring/50;

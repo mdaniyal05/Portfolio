@@ -17,63 +17,63 @@ const items = [
   {
     title: "Collaboration",
     description: (
-      <span className="text-sm">
+      <span>
         Collaboration is at the heart of my work - I prioritize strong client
         partnerships and open communication to achieve the best results.
       </span>
     ),
     header: <Grid1 />,
     className: "md:col-span-1",
-    icon: <FaHandsHelping className="h-4 w-4 text-neutral-500" />,
+    icon: <FaHandsHelping className="h-4 w-4 text-secondaryColor" />,
   },
   {
     title: "Team Up",
     description: (
-      <span className="text-sm">
+      <span>
         Ready to create something amazing together? Partner with me on your next
         big idea - together, we’ll make it happen.
       </span>
     ),
     header: <Grid2 />,
     className: "md:col-span-1",
-    icon: <FaProjectDiagram className="h-4 w-4 text-neutral-500" />,
+    icon: <FaProjectDiagram className="h-4 w-4 text-secondaryColor" />,
   },
   {
     title: "Open-Ended",
     description: (
-      <span className="text-sm">
+      <span>
         I'm flexible with different time zones - let's not let distance stand in
         the way of bringing our ideas to life.
       </span>
     ),
     header: <Grid3 />,
     className: "md:col-span-1",
-    icon: <FaGlobe className="h-4 w-4 text-neutral-500" />,
+    icon: <FaGlobe className="h-4 w-4 text-secondaryColor" />,
   },
   {
     title: "Building Websites",
     description: (
-      <span className="text-sm">
+      <span>
         I develop robust, scalable, and intuitive web applications optimized for
         performance and usability.
       </span>
     ),
     header: <Grid4 />,
     className: "md:col-span-2",
-    icon: <FaLaptopCode className="h-4 w-4 text-neutral-500" />,
+    icon: <FaLaptopCode className="h-4 w-4 text-secondaryColor" />,
   },
 
   {
     title: "Ardent",
     description: (
-      <span className="text-sm">
+      <span>
         Passionate and Driven by curiosity about exploring and mastering
         cutting-edge technologies and tools.
       </span>
     ),
     header: <Grid5 />,
     className: "md:col-span-1",
-    icon: <GrTechnology className="h-4 w-4 text-neutral-500" />,
+    icon: <GrTechnology className="h-4 w-4 text-secondaryColor" />,
   },
 ];
 
