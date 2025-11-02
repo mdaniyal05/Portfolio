@@ -85,12 +85,12 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item) => (
           <li
-            className="relative w-[200px] max-w-full shrink-0 rounded-4xl border bg-neutral-800 border-zinc-100 p-2"
+            className="relative w-[200px] max-w-full shrink-0 rounded-4xl border bg-secondaryColor border-black p-2"
             key={item.name}
           >
             <div className="flex justify-center items-center gap-2.5">
               <img src={item.svg} alt={item.name} width={30} height={30} />
-              <span className="relative text-center z-20 text-sm leading-[1.6] font-normal text-neutral-300">
+              <span className="relative text-center z-20 text-sm leading-[1.6] font-bold text-primaryColor">
                 {item.name}
               </span>
             </div>
