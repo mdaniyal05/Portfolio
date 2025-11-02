@@ -1,0 +1,58 @@
+import { FaLocationArrow } from "react-icons/fa6";
+import Button from "./Button";
+
+const links = [
+  {
+    id: 1,
+    img: "/github2.svg",
+  },
+  {
+    id: 2,
+    img: "/linkedin.svg",
+  },
+  {
+    id: 3,
+    img: "/whatsapp.svg",
+  },
+];
+
+const Footer = () => {
+  return (
+    <footer className="w-full pt-20 pb-10" id="contact">
+      <div className="flex flex-col items-center">
+        <h1 className="lg:max-w-[45vw] text-textColor text-4xl text-center">
+          Ready to take <span className="text-secondaryColor">YOUR</span>{" "}
+          digital presence to the next level?
+        </h1>
+        <p className="text-textColor md:mt-10 my-5 text-center text-3xl">
+          Reach out to me today and let&apos;s discuss how I can help you
+          achieve your goals.
+        </p>
+        <a href="mdaniyal5454@gmail.com">
+          <Button
+            title="Let's get in touch"
+            icon={<FaLocationArrow />}
+            position="right"
+          />
+        </a>
+      </div>
+      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+        <p className="md:text-base text-sm md:font-normal font-light text-accentColor">
+          Copyright © {new Date().getFullYear()} Daniyal
+        </p>
+        <div className="flex items-center md:gap-3 gap-6">
+          {links.map((info) => (
+            <div
+              key={info.id}
+              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-primaryColor rounded-lg border border-secondaryColor"
+            >
+              <img src={info.img} alt="icons" width={20} height={20} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;
