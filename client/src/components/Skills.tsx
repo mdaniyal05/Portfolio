@@ -95,6 +95,10 @@ const skills = [
     svg: "/sequelize.svg",
     name: "Sequelize",
   },
+  {
+    svg: "/bash.svg",
+    name: "Bash",
+  },
 ];
 
 const Skills = () => {
@@ -110,7 +114,7 @@ const Skills = () => {
             {/* Static Icons */}
             {skills.map((item) => (
               <div className="text-center">
-                <div className="p-4 bg-accentColor rounded-lg shadow-lg flex flex-col justify-center items-center">
+                <div className="p-4 bg-primaryColor border border-secondaryColor rounded-lg shadow-lg flex flex-col justify-center items-center">
                   <img src={item.svg} alt={item.name} />
                 </div>
               </div>

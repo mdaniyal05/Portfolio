@@ -101,6 +101,10 @@ const tools2 = [
     svg: "/sequelize.svg",
     name: "Sequelize",
   },
+  {
+    svg: "/bash.svg",
+    name: "Bash",
+  },
 ];
 
 const Grid5 = () => {
