@@ -14,7 +14,21 @@ const projects = [
       "/postgresql.svg",
       "/express.svg",
     ],
-    link: "/ui.earth.com",
+    link: "https://zeno-finance-tracker-client.vercel.app",
+  },
+  {
+    id: 2,
+    title: "PingNet Messenger",
+    des: "Experience seamless, real-time communication with PingNet Messenger - A modern platform designed to connect you effortlessly with friends and family.",
+    img: "/pingnet.png",
+    iconLists: [
+      "/react.svg",
+      "/ts.svg",
+      "/nodejs.svg",
+      "/mongodb.svg",
+      "/express.svg",
+    ],
+    link: "https://pingnet-messenger.vercel.app",
   },
 ];
 
@@ -31,7 +45,7 @@ export default function AnimatedPin() {
             key={item.id}
           >
             <PinContainer title={item.link} href={item.link}>
-              <div className="relative rounded-2xl flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] lg:h-[30vh] mb-10">
+              <div className="relative rounded-2xl flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}

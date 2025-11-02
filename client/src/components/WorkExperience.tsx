@@ -9,7 +9,7 @@ const workExperience = [
     thumbnail: "/experience.svg",
   },
   {
-    id: 1,
+    id: 2,
     title: "Freelance Frontend Developer",
     desc: "Provided freelance frontend development services, focusing on creating responsive and user-friendly web interfaces.",
     className: "md:col-span-2",
@@ -21,7 +21,7 @@ const WorkExperience = () => {
   return (
     <div className="py-20 w-full flex flex-col justify-center items-center">
       <h1 className="text-textColor font-bold text-4xl">
-        My <span className="text-secondaryColor">work experience</span>
+        My <span className="text-secondaryColor">Work Experience</span>
       </h1>
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
         {workExperience.map((card) => (
