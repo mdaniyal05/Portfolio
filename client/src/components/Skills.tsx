@@ -122,16 +122,6 @@ const Skills = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center text-center">
-        <div className="w-full md:w-1/2 relative p-6 sm:px-28 md:p-0">
-          <p className="p-3 text-[1.2rem] leading-relaxed text-textColor">
-            These are the tools and technologies that I use daily to develop web
-            applications. With a strong foundation in frontend and backend, I
-            focus on delivering clean, maintainable code and intuitive user
-            experiences.
-          </p>
-        </div>
-      </div>
     </section>
   );
 };
