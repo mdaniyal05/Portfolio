@@ -2,6 +2,7 @@ import Hero from "./components/Hero";
 import { FloatingNav } from "./components/ui/floating-navbar";
 import BentoGridComp from "./components/Grid";
 import AnimatedPin from "./components/PinCard";
+import WorkExperience from "./components/WorkExperience";
 
 const navItems = [
   {
@@ -30,6 +31,7 @@ function App() {
         <Hero />
         <BentoGridComp />
         <AnimatedPin />
+        <WorkExperience />
       </div>
     </main>
   );
