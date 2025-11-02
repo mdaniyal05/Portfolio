@@ -3,6 +3,7 @@ import { FloatingNav } from "./components/ui/floating-navbar";
 import BentoGridComp from "./components/Grid";
 import AnimatedPin from "./components/PinCard";
 import WorkExperience from "./components/WorkExperience";
+import Skills from "./components/Skills";
 
 const navItems = [
   {
@@ -32,6 +33,7 @@ function App() {
         <BentoGridComp />
         <AnimatedPin />
         <WorkExperience />
+        <Skills/>
       </div>
     </main>
   );
