@@ -18,7 +18,7 @@ const links = [
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-15 pb-10" id="contact">
+    <footer className="w-full pt-15 pb-10" id="footer">
       <div className="flex flex-col items-center">
         <h1 className="lg:max-w-[45vw] text-textColor text-4xl text-center">
           Ready to take <span className="text-secondaryColor">YOUR</span>{" "}

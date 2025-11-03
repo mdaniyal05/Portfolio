@@ -103,7 +103,10 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section className="py-15 w-full flex flex-col justify-center items-center gap-5 min-h-screen" id="skills">
+    <section
+      className="py-15 w-full flex flex-col justify-center items-center gap-5 min-h-screen"
+      id="skills"
+    >
       <h1 className="text-textColor font-bold text-4xl">
         My <span className="text-secondaryColor">Skills</span>
       </h1>

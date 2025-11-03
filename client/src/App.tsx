@@ -8,8 +8,8 @@ import Footer from "./components/Footer";
 
 const navItems = [
   {
-    name: "ABOUT",
-    id: "about",
+    name: "EXP",
+    id: "experience",
   },
   {
     name: "PROJECTS",
