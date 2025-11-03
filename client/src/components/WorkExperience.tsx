@@ -23,7 +23,7 @@ const WorkExperience = () => {
       className="py-15 w-full flex flex-col justify-center items-center min-h-screen"
       id="experience"
     >
-      <h1 className="text-textColor font-bold text-4xl">
+      <h1 className="text-textColor font-bold text-4xl text-center">
         My <span className="text-secondaryColor">Work Experience</span>
       </h1>
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">

@@ -34,11 +34,22 @@ const projects = [
     ],
     link: "https://pingnet-messenger.vercel.app",
   },
+  {
+    id: 3,
+    title: "Pixel Quest",
+    des: "Pixel Quest is a 2D platformer game, where player has to collect all the fruits to achieve victory while skillfully avoiding the pursuit of a relentless bat.",
+    img: "/pixelquest.png",
+    iconLists: ["/gogot.svg"],
+    link: "",
+  },
 ];
 
 export default function AnimatedPin() {
   return (
-    <section className="py-15 flex flex-col justify-center items-center min-h-screen" id="projects">
+    <section
+      className="py-15 flex flex-col justify-center items-center min-h-screen"
+      id="projects"
+    >
       <h1 className="heading text-textColor font-bold text-4xl text-center">
         A Selection of <span className="text-secondaryColor">My Work</span>
       </h1>
@@ -93,7 +104,6 @@ export default function AnimatedPin() {
                     </div>
                   ))}
                 </div>
-
                 <div className="flex justify-center items-center">
                   <p className="flex lg:text-[1.1rem] md:text-xs text-sm text-accentColor">
                     Check Live Site

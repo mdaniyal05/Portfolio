@@ -99,6 +99,18 @@ const skills = [
     svg: "/bash.svg",
     name: "Bash",
   },
+  {
+    svg: "/terminal.svg",
+    name: "Terminal",
+  },
+  {
+    svg: "/hyprland.svg",
+    name: "Hyprland",
+  },
+  {
+    svg: "/godot.svg",
+    name: "Godot",
+  },
 ];
 
 const Skills = () => {
@@ -117,7 +129,7 @@ const Skills = () => {
             {/* Static Icons */}
             {skills.map((item) => (
               <div className="text-center">
-                <div className="p-4 bg-primaryColor border border-secondaryColor rounded-lg shadow-lg flex flex-col justify-center items-center">
+                <div className="p-4 w-20 h-20 bg-primaryColor border border-secondaryColor rounded-lg shadow-lg flex flex-col justify-center items-center">
                   <img src={item.svg} alt={item.name} loading="lazy" />
                 </div>
               </div>
