@@ -1,8 +1,12 @@
-import { Globe } from "./ui/globe";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
+import React from "react";
 
-export function GlobeDemo() {
+const Globe = React.lazy(() =>
+  import("./ui/globe").then((module) => ({ default: module.Globe }))
+);
+
+export function GlobeComp() {
   const globeConfig = {
     pointSize: 4,
     globeColor: "#062056",
