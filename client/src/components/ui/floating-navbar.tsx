@@ -66,7 +66,7 @@ export const FloatingNav = ({
       >
         {navItems.map((navItem: any, idx: number) => (
           <button
-            key={`link=${idx}`}
+            key={idx}
             onClick={() => scrollToSection(navItem.id)}
             className={cn(
               "relative items-center flex space-x-1 text-textColor hover:text-accentColor"
