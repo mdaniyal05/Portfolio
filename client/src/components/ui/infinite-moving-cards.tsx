@@ -89,7 +89,7 @@ export const InfiniteMovingCards = ({
             key={item.name}
           >
             <div className="flex justify-center items-center gap-2.5">
-              <img src={item.svg} alt={item.name} width={30} height={30} />
+              <img src={item.svg} alt={item.name} width={30} height={30} loading="lazy"/>
               <span className="relative text-center z-20 text-sm leading-[1.6] font-bold text-textColor">
                 {item.name}
               </span>

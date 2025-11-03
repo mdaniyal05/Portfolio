@@ -39,6 +39,7 @@ const Grid4 = () => {
           alt="avatar"
           height="100"
           width="100"
+          loading="lazy"
           className="rounded-full h-20 w-20 bg-cover p-1 animate-[spin_20s_linear_infinite]"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-textColor mt-4">
@@ -54,6 +55,7 @@ const Grid4 = () => {
           alt="avatar"
           height="100"
           width="100"
+          loading="lazy"
           className="rounded-full h-20 w-20 p-1 animate-[spin_20s_linear_infinite]"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-textColor mt-4">
@@ -72,6 +74,7 @@ const Grid4 = () => {
           alt="avatar"
           height="100"
           width="100"
+          loading="lazy"
           className="rounded-full h-20 w-20  p-1 animate-[spin_20s_linear_infinite]"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-textColor mt-4">

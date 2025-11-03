@@ -115,7 +115,7 @@ const Skills = () => {
             {skills.map((item) => (
               <div className="text-center">
                 <div className="p-4 bg-primaryColor border border-secondaryColor rounded-lg shadow-lg flex flex-col justify-center items-center">
-                  <img src={item.svg} alt={item.name} />
+                  <img src={item.svg} alt={item.name} loading="lazy" />
                 </div>
               </div>
             ))}
