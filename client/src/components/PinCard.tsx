@@ -39,7 +39,7 @@ const projects = [
     title: "Pixel Quest",
     des: "Pixel Quest is a 2D platformer game, where player has to collect all the fruits to achieve victory while skillfully avoiding the pursuit of a relentless bat.",
     img: "/pixelquest.png",
-    iconLists: ["/gogot.svg"],
+    iconLists: ["/godot.svg"],
     link: "",
   },
 ];
