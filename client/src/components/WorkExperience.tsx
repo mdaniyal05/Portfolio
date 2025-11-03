@@ -19,7 +19,10 @@ const workExperience = [
 
 const WorkExperience = () => {
   return (
-    <div className="py-15 w-full flex flex-col justify-center items-center min-h-screen">
+    <section
+      className="py-15 w-full flex flex-col justify-center items-center min-h-screen"
+      id="experience"
+    >
       <h1 className="text-textColor font-bold text-4xl">
         My <span className="text-secondaryColor">Work Experience</span>
       </h1>
@@ -56,7 +59,7 @@ const WorkExperience = () => {
           </Button>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

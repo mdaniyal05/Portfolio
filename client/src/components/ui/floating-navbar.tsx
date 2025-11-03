@@ -40,6 +40,11 @@ export const FloatingNav = ({
     }
   });
 
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <AnimatePresence mode="wait">
       <motion.div
@@ -60,15 +65,17 @@ export const FloatingNav = ({
         )}
       >
         {navItems.map((navItem: any, idx: number) => (
-          <a
+          <button
             key={`link=${idx}`}
-            href={navItem.link}
+            onClick={() => scrollToSection(navItem.id)}
             className={cn(
               "relative items-center flex space-x-1 text-textColor hover:text-accentColor"
             )}
           >
-            <span className="text-sm sm:block sm:text-md">{navItem.name}</span>
-          </a>
+            <button className="text-sm sm:block sm:text-md">
+              {navItem.name}
+            </button>
+          </button>
         ))}
       </motion.div>
     </AnimatePresence>

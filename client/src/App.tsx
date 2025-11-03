@@ -9,19 +9,19 @@ import Footer from "./components/Footer";
 const navItems = [
   {
     name: "ABOUT",
-    link: "/about",
+    id: "about",
   },
   {
     name: "PROJECTS",
-    link: "/projects",
+    id: "projects",
   },
   {
     name: "SKILLS",
-    link: "/skills",
+    id: "skills",
   },
   {
     name: "CONTACT",
-    link: "/contact",
+    id: "footer",
   },
 ];
 

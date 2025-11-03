@@ -38,7 +38,7 @@ const projects = [
 
 export default function AnimatedPin() {
   return (
-    <div className="py-15 flex flex-col justify-center items-center min-h-screen">
+    <section className="py-15 flex flex-col justify-center items-center min-h-screen" id="projects">
       <h1 className="heading text-textColor font-bold text-4xl text-center">
         A Selection of <span className="text-secondaryColor">My Work</span>
       </h1>
@@ -105,6 +105,6 @@ export default function AnimatedPin() {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 }
