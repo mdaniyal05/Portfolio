@@ -78,7 +78,7 @@ const Grid4 = () => {
           className="rounded-full h-20 w-20  p-1 animate-[spin_20s_linear_infinite]"
         />
         <p className="sm:text-sm text-xs text-center font-semibold text-textColor mt-4">
-          Websites that present your brand the best
+          Websites that present you
         </p>
         <p className="border border-orange-500 bg-orange-100 dark:bg-orange-900/20 text-orange-600 text-xs rounded-full px-2 py-0.5 mt-4">
           Supreme
