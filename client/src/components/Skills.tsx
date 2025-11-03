@@ -125,7 +125,7 @@ const Skills = () => {
       <div className="flex items-center justify-center mt-5">
         {/* Right Side (Static Icons Grid) */}
         <div className="w-70 sm:w-80 md:w-150 flex justify-center items-center">
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-4">
+          <div className="grid grid-cols-3 md:grid-cols-7 gap-4">
             {/* Static Icons */}
             {skills.map((item, idx) => (
               <div className="text-center" key={idx}>

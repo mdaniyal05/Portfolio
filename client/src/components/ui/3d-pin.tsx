@@ -26,6 +26,9 @@ export const PinContainer = ({
     setTransform("translate(-50%,-50%) rotateX(0deg) scale(1)");
   };
 
+  console.log(href);
+  
+
   return (
     <a
       className={cn(

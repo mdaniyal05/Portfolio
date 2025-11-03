@@ -51,7 +51,7 @@ const WorkExperience = () => {
                 <h1 className="text-start text-xl md:text-2xl font-bold text-accentColor">
                   {card.title}
                 </h1>
-                <p className="text-start text-white-100 mt-3 font-semibold">
+                <p className="text-start text-textColor mt-3 font-semibold text-[1.1rem]">
                   {card.desc}
                 </p>
               </div>

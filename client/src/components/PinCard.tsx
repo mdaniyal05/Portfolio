@@ -1,5 +1,4 @@
 import React from "react";
-import { FaLocationArrow } from "react-icons/fa6";
 
 const PinContainer = React.lazy(() =>
   import("./ui/3d-pin").then((module) => ({ default: module.PinContainer }))
@@ -19,6 +18,7 @@ const projects = [
       "/express.svg",
     ],
     link: "https://zeno-finance-tracker-client.vercel.app",
+    github: "https://github.com/mdaniyal05/Zeno",
   },
   {
     id: 2,
@@ -33,6 +33,7 @@ const projects = [
       "/express.svg",
     ],
     link: "https://pingnet-messenger.vercel.app",
+    github: "https://github.com/mdaniyal05/PingNet",
   },
   {
     id: 3,
@@ -40,7 +41,8 @@ const projects = [
     des: "Pixel Quest is a 2D platformer game, where player has to collect all the fruits to achieve victory while skillfully avoiding the pursuit of a relentless bat.",
     img: "/pixelquest.png",
     iconLists: ["/godot.svg"],
-    link: "",
+    link: "https://github.com/mdaniyal05/PixelQuest",
+    github: "https://github.com/mdaniyal05/PixelQuest",
   },
 ];
 
@@ -76,7 +78,7 @@ export default function AnimatedPin() {
               </h1>
 
               <p
-                className="font-medium text-textColor text-sm"
+                className="font-semibold text-textColor text-[1rem]"
                 style={{
                   color: "#BEC1DD",
                   margin: "1vh 0",
@@ -104,12 +106,17 @@ export default function AnimatedPin() {
                     </div>
                   ))}
                 </div>
-                <div className="flex justify-center items-center">
-                  <p className="flex lg:text-[1.1rem] md:text-xs text-sm text-accentColor">
-                    Check Live Site
-                  </p>
-                  <FaLocationArrow className="ms-3 text-accentColor" />
-                </div>
+                <a href={item.github} target="_blank">
+                  <div className="w-10 h-10 cursor-pointer flex justify-center items-center bg-primaryColor rounded-lg border border-secondaryColor hover:bg-secondaryColor">
+                    <img
+                      src="/github.svg"
+                      alt="icons"
+                      width={20}
+                      height={20}
+                      loading="lazy"
+                    />
+                  </div>
+                </a>
               </div>
             </PinContainer>
           </div>
