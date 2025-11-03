@@ -13,8 +13,7 @@ const TextGenerateEffect = React.lazy(() =>
   }))
 );
 
-const words =
-  "Hi! I'm Daniyal, a Full Stack Web Developer & Linux Geek based in Pakistan";
+const words = "Hi! I'm Daniyal, a Full Stack Web Developer & Linux Geek";
 
 const Hero = () => {
   const scrollToSection = (id: string) => {
