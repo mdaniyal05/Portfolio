@@ -18,7 +18,7 @@ const links = [
 
 const Footer = () => {
   return (
-    <footer className="w-full pt-20 pb-10" id="contact">
+    <footer className="w-full pt-15 pb-10" id="contact">
       <div className="flex flex-col items-center">
         <h1 className="lg:max-w-[45vw] text-textColor text-4xl text-center">
           Ready to take <span className="text-secondaryColor">YOUR</span>{" "}
@@ -47,7 +47,13 @@ const Footer = () => {
               key={info.id}
               className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-primaryColor rounded-lg border border-secondaryColor"
             >
-              <img src={info.img} alt="icons" width={20} height={20} loading="lazy" />
+              <img
+                src={info.img}
+                alt="icons"
+                width={20}
+                height={20}
+                loading="lazy"
+              />
             </div>
           ))}
         </div>

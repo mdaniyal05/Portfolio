@@ -38,14 +38,14 @@ const projects = [
 
 export default function AnimatedPin() {
   return (
-    <div className="py-20 flex flex-col justify-center items-center min-h-screen">
+    <div className="py-15 flex flex-col justify-center items-center min-h-screen">
       <h1 className="heading text-textColor font-bold text-4xl text-center">
         A Selection of <span className="text-secondaryColor">My Work</span>
       </h1>
       <div className="flex flex-wrap items-center justify-center p-4 gap-16">
         {projects.map((item) => (
           <div
-            className="lg:min-h-130 h-150 flex items-center justify-center sm:w-96 w-[80vw]"
+            className="lg:min-h-130 h-125 flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
             <PinContainer title={item.link} href={item.link}>

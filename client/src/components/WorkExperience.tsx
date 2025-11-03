@@ -19,7 +19,7 @@ const workExperience = [
 
 const WorkExperience = () => {
   return (
-    <div className="py-20 w-full flex flex-col justify-center items-center min-h-screen">
+    <div className="py-15 w-full flex flex-col justify-center items-center min-h-screen">
       <h1 className="text-textColor font-bold text-4xl">
         My <span className="text-secondaryColor">Work Experience</span>
       </h1>
