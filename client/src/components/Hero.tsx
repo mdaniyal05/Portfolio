@@ -17,6 +17,11 @@ const words =
   "Hi! I'm Daniyal, a Full Stack Web Developer & Linux Geek based in Pakistan";
 
 const Hero = () => {
+  const scrollToSection = (id: string) => {
+    const section = document.getElementById(id);
+    section?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <section
       className="py-15 flex justify-center items-center min-h-screen"
@@ -34,7 +39,12 @@ const Hero = () => {
           words={words}
           className="mt-4 font-normal text-base max-w-lg text-center mx-auto"
         />
-        <Button position="right" title="My work" icon={<FaLocationArrow />} />
+        <Button
+          position="right"
+          title="My work"
+          icon={<FaLocationArrow />}
+          handleClick={() => scrollToSection("projects")}
+        />
       </div>
       <Meteors number={50} />
     </section>

@@ -29,9 +29,9 @@ const Footer = () => {
           let&apos;s discuss how I can help{" "}
           <span className="text-secondaryColor">YOU</span> achieve your goals.
         </p>
-        <a href="mdaniyal5454@gmail.com">
+        <a href="https://mail.google.com/mail" target="_blank">
           <Button
-            title="Let's get in touch"
+            title="Get in Touch"
             icon={<FaLocationArrow />}
             position="right"
           />
