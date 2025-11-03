@@ -49,7 +49,7 @@ const Grid4 = () => {
           Leading
         </p>
       </motion.div>
-      <motion.div className="h-full hidden lg:flex relative z-20 w-1/3 bg-primaryColor rounded-2xl p-4 border border-secondaryColor flex-col items-center justify-center">
+      <motion.div className="h-full flex relative z-20 w-1/3 bg-primaryColor rounded-2xl p-4 border border-secondaryColor flex-col items-center justify-center">
         <img
           src="/browser2.svg"
           alt="avatar"
