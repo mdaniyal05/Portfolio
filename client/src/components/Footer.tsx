@@ -24,9 +24,10 @@ const Footer = () => {
           Ready to take <span className="text-secondaryColor">YOUR</span>{" "}
           digital presence to the next level?
         </h1>
-        <p className="text-textColor md:mt-10 my-5 text-center text-3xl">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
+        <p className="text-textColor mt-10 my-5 text-center text-4xl">
+          Reach out to <span className="text-secondaryColor">ME</span> today and
+          let&apos;s discuss how I can help{" "}
+          <span className="text-secondaryColor">YOU</span> achieve your goals.
         </p>
         <a href="mdaniyal5454@gmail.com">
           <Button
@@ -40,7 +41,7 @@ const Footer = () => {
         <p className="md:text-base text-sm md:font-normal font-light text-accentColor">
           Copyright © {new Date().getFullYear()} Daniyal
         </p>
-        <div className="flex items-center md:gap-3 gap-6">
+        <div className="flex items-center md:gap-3 gap-6 mt-10">
           {links.map((info) => (
             <div
               key={info.id}
