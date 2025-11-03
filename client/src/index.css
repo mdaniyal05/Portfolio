@@ -1,14 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 @import "tailwindcss";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --color-primaryColor: #19183B;
+  --color-primaryColor: #19183b;
   --color-secondaryColor: #708993;
-  --color-accentColor: #A1C2BD;
-  --color-textColor: #E7F2EF;
+  --color-accentColor: #a1c2bd;
+  --color-textColor: #e7f2ef;
   --font-orbitron: "Orbitron", sans-serif;
 }
 
@@ -134,6 +134,8 @@
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    font-display: swap;
+    scroll-behavior: smooth;
   }
   * {
     @apply border-border outline-ring/50;

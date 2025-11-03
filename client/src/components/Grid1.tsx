@@ -23,7 +23,7 @@ const Grid1 = () => {
     >
       <img
         src="/me.jpg"
-        className="h-40 w-40 rounded-full animate-[spin_30s_linear_infinite]"
+        className="h-30 w-30 lg:h-40 lg:w-40 rounded-full animate-[spin_30s_linear_infinite]"
         loading="lazy"
       />
     </motion.div>

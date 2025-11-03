@@ -1,5 +1,9 @@
+import React from "react";
 import { FaLocationArrow } from "react-icons/fa6";
-import { PinContainer } from "./ui/3d-pin";
+
+const PinContainer = React.lazy(() =>
+  import("./ui/3d-pin").then((module) => ({ default: module.PinContainer }))
+);
 
 const projects = [
   {
@@ -34,7 +38,7 @@ const projects = [
 
 export default function AnimatedPin() {
   return (
-    <div className="py-20 flex flex-col justify-center items-center">
+    <div className="py-20 flex flex-col justify-center items-center min-h-screen">
       <h1 className="heading text-textColor font-bold text-4xl text-center">
         A Selection of <span className="text-secondaryColor">My Work</span>
       </h1>
@@ -47,7 +51,12 @@ export default function AnimatedPin() {
             <PinContainer title={item.link} href={item.link}>
               <div className="relative rounded-2xl flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] mb-10">
                 <div className="relative w-full h-full lg:rounded-3xl">
-                  <img src={item.img} alt="cover" className="bg-cover" loading="lazy"/>
+                  <img
+                    src={item.img}
+                    alt="cover"
+                    className="bg-cover"
+                    loading="lazy"
+                  />
                 </div>
               </div>
 
@@ -75,7 +84,12 @@ export default function AnimatedPin() {
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
                     >
-                      <img src={icon} alt="icon5" className="p-2" loading="lazy" />
+                      <img
+                        src={icon}
+                        alt="icon5"
+                        className="p-2"
+                        loading="lazy"
+                      />
                     </div>
                   ))}
                 </div>
