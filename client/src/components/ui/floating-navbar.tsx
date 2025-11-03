@@ -25,16 +25,20 @@ export const FloatingNav = ({
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     // Check if current is not undefined and is a number
-    if (typeof current === "number") {
-      const direction = current! - scrollYProgress.getPrevious()!;
+    if (window.innerWidth <= 768) {
+      setVisible(true);
+    } else {
+      if (typeof current === "number") {
+        const direction = current! - scrollYProgress.getPrevious()!;
 
-      if (scrollYProgress.get() < 0.05) {
-        setVisible(false);
-      } else {
-        if (direction < 0) {
-          setVisible(true);
-        } else {
+        if (scrollYProgress.get() < 0.05) {
           setVisible(false);
+        } else {
+          if (direction < 0) {
+            setVisible(true);
+          } else {
+            setVisible(false);
+          }
         }
       }
     }
@@ -57,7 +61,7 @@ export const FloatingNav = ({
           opacity: visible ? 1 : 0,
         }}
         transition={{
-          duration: 0.6,
+          duration: 0.3,
         }}
         className={cn(
           "flex max-w-fit fixed top-10 inset-x-0 mx-auto border-2 border-secondaryColor rounded-2xl bg-primaryColor shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)] z-5000 px-8 py-2 items-center justify-center space-x-4 w-75 md:w-auto",
@@ -65,17 +69,19 @@ export const FloatingNav = ({
         )}
       >
         {navItems.map((navItem: any, idx: number) => (
-          <button
+          <div
             key={idx}
-            onClick={() => scrollToSection(navItem.id)}
             className={cn(
               "relative items-center flex space-x-1 text-textColor hover:text-accentColor"
             )}
           >
-            <button className="text-xs sm:block sm:text-md">
+            <button
+              className="text-xs md:block md:text-[1.1rem] cursor-pointer"
+              onClick={() => scrollToSection(navItem.id)}
+            >
               {navItem.name}
             </button>
-          </button>
+          </div>
         ))}
       </motion.div>
     </AnimatePresence>
