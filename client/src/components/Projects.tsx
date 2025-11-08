@@ -1,7 +1,7 @@
 import { projects } from "@/data/projects";
 import { PinContainer } from "./ui/3d-pin";
 
-export default function AnimatedPin() {
+export default function Projects() {
   return (
     <section
       className="py-15 flex flex-col justify-center items-center min-h-screen"

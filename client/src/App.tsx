@@ -1,29 +1,11 @@
 import Hero from "./components/Hero";
 import { FloatingNav } from "./components/ui/floating-navbar";
 import BentoGridComp from "./components/Grid";
-import AnimatedPin from "./components/PinCard";
+import Projects from "./components/Projects";
 import WorkExperience from "./components/WorkExperience";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
-
-const navItems = [
-  {
-    name: "EXP",
-    id: "experience",
-  },
-  {
-    name: "PROJECTS",
-    id: "projects",
-  },
-  {
-    name: "SKILLS",
-    id: "skills",
-  },
-  {
-    name: "CONTACT",
-    id: "footer",
-  },
-];
+import { navItems } from "./data/nav";
 
 function App() {
   return (
@@ -32,7 +14,7 @@ function App() {
         <FloatingNav navItems={navItems} />
         <Hero />
         <BentoGridComp />
-        <AnimatedPin />
+        <Projects />
         <WorkExperience />
         <Skills />
         <Footer />
