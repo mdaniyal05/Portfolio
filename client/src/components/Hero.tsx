@@ -1,17 +1,8 @@
-import React from "react";
 import Button from "./Button";
 import { FaLocationArrow } from "react-icons/fa6";
 import { Meteors } from "./ui/meteors";
-
-const Spotlight = React.lazy(() =>
-  import("./ui/spotlight-new").then((module) => ({ default: module.Spotlight }))
-);
-
-const TextGenerateEffect = React.lazy(() =>
-  import("./ui/text-generate-effect").then((module) => ({
-    default: module.TextGenerateEffect,
-  }))
-);
+import { Spotlight } from "./ui/spotlight-new";
+import { TextGenerateEffect } from "./ui/text-generate-effect";
 
 const words = "Hi! I'm Daniyal, a Full Stack Web Developer & Linux Geek";
 

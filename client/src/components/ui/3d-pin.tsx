@@ -27,7 +27,6 @@ export const PinContainer = ({
   };
 
   console.log(href);
-  
 
   return (
     <a
