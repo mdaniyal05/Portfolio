@@ -10,10 +10,8 @@ const Skills = () => {
         My <span className="text-secondaryColor">Skills</span>
       </h1>
       <div className="flex items-center justify-center mt-5">
-        {/* Right Side (Static Icons Grid) */}
         <div className="w-70 sm:w-80 md:w-150 flex justify-center items-center">
           <div className="grid grid-cols-3 md:grid-cols-7 gap-4">
-            {/* Static Icons */}
             {skills.map((item, idx) => (
               <div className="text-center" key={idx}>
                 <div className="p-4 w-20 h-20 bg-primaryColor border border-secondaryColor rounded-lg shadow-lg flex flex-col justify-center items-center">
