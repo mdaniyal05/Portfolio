@@ -1,9 +1,5 @@
 import { projects } from "@/data/projects";
-import React from "react";
-
-const PinContainer = React.lazy(() =>
-  import("./ui/3d-pin").then((module) => ({ default: module.PinContainer }))
-);
+import { PinContainer } from "./ui/3d-pin";
 
 export default function AnimatedPin() {
   return (
