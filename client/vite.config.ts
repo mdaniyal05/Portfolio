@@ -16,12 +16,10 @@ export default defineConfig({
     rollupOptions: {
       output: {
         manualChunks: {
-          three: [
-            "three",
-            "three-globe",
-            "@react-three/fiber",
-            "@react-three/drei",
-          ],
+          three: ["three"],
+          threeGlobe: ["three-globe"],
+          reactThreeFiber: ["@react-three/fiber"],
+          reactThreeDrei: ["@react-three/drei"],
         },
       },
     },
