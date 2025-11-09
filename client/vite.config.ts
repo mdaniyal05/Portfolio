@@ -4,6 +4,14 @@ import path from "path";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
+  optimizeDeps: {
+    include: [
+      "three",
+      "three-globe",
+      "@react-three/fiber",
+      "@react-three/drei",
+    ],
+  },
   build: {
     rollupOptions: {
       output: {
