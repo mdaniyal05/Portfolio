@@ -1,18 +1,6 @@
 import { FaLocationArrow } from "react-icons/fa6";
 import Button from "./Button";
-
-const links = [
-  {
-    id: 1,
-    img: "/github2.svg",
-    link: "https://github.com/mdaniyal05",
-  },
-  {
-    id: 2,
-    img: "/linkedin.svg",
-    link: "https://www.linkedin.com/in/muhammad-daniyal-009b1631b",
-  },
-];
+import { links } from "@/data/footer";
 
 const Footer = () => {
   return (
