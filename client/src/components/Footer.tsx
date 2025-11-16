@@ -28,7 +28,7 @@ const Footer = () => {
         <p className="md:text-base text-sm md:font-normal font-light text-accentColor">
           Copyright © {new Date().getFullYear()} Daniyal
         </p>
-        <div className="flex items-center md:gap-3 gap-6 mt-10">
+        <div className="flex items-center justify-center md:gap-3 gap-6 mt-10 md:mt-0">
           {links.map((info) => (
             <a href={info.link} target="_blank">
               <div

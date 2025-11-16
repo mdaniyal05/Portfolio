@@ -56,6 +56,10 @@ export const skills = [
     name: "Material UI",
   },
   {
+    svg: "/redis.svg",
+    name: "Redis",
+  },
+  {
     svg: "/postgresql.svg",
     name: "PostgreSQL",
   },
