@@ -4,26 +4,6 @@ import path from "path";
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
-  optimizeDeps: {
-    include: [
-      "three",
-      "three-globe",
-      "@react-three/fiber",
-      "@react-three/drei",
-    ],
-  },
-  build: {
-    rollupOptions: {
-      output: {
-        manualChunks: {
-          three: ["three"],
-          threeGlobe: ["three-globe"],
-          reactThreeFiber: ["@react-three/fiber"],
-          reactThreeDrei: ["@react-three/drei"],
-        },
-      },
-    },
-  },
   plugins: [
     react({
       babel: {
