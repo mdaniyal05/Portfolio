@@ -1,9 +1,9 @@
 import { motion } from "motion/react";
 import React, { Suspense } from "react";
 
-const GlobeComp = React.lazy(() =>
-  import("./Globe").then((module) => ({ default: module.GlobeComp }))
-);
+// const GlobeComp = React.lazy(() =>
+//   import("./Globe").then((module) => ({ default: module.GlobeComp }))
+// );
 
 const Grid3 = () => {
   const variants = {
@@ -28,7 +28,7 @@ const Grid3 = () => {
       className="flex flex-1 w-full h-full min-h-24 dark:bg-dot-white/[0.2] rounded-lg bg-dot-black/[0.2] flex-col space-y-2"
     >
       <Suspense fallback={null}>
-        <GlobeComp />
+        {/* <GlobeComp /> */}
       </Suspense>
     </motion.div>
   );
