@@ -23,7 +23,7 @@ const items = [
       </span>
     ),
     header: <Grid1 />,
-    className: "md:col-span-1",
+    className: "lg:col-span-1",
     icon: <FaHandsHelping className="h-4 w-4 text-secondaryColor" />,
   },
   {
@@ -35,7 +35,7 @@ const items = [
       </span>
     ),
     header: <Grid2 />,
-    className: "md:col-span-1",
+    className: "lg:col-span-1",
     icon: <FaProjectDiagram className="h-4 w-4 text-secondaryColor" />,
   },
   {
@@ -47,7 +47,7 @@ const items = [
       </span>
     ),
     header: <Grid3 />,
-    className: "md:col-span-1",
+    className: "lg:col-span-1",
     icon: <FaGlobe className="h-4 w-4 text-secondaryColor" />,
   },
   {
@@ -59,7 +59,7 @@ const items = [
       </span>
     ),
     header: <Grid4 />,
-    className: "md:col-span-2",
+    className: "lg:col-span-2",
     icon: <FaLaptopCode className="h-4 w-4 text-secondaryColor" />,
   },
 
@@ -79,7 +79,7 @@ const items = [
 
 function BentoGridComp() {
   return (
-    <BentoGrid className="max-w-7xl mx-auto py-15 md:auto-rows-[25rem] min-h-screen">
+    <BentoGrid className="max-w-7xl mx-auto py-15 lg:auto-rows-[25rem] min-h-screen">
       {items.map((item, i) => (
         <BentoGridItem
           key={i}
