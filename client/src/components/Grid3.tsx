@@ -1,9 +1,5 @@
 import { motion } from "motion/react";
-import React, { Suspense } from "react";
-
-// const GlobeComp = React.lazy(() =>
-//   import("./Globe").then((module) => ({ default: module.GlobeComp }))
-// );
+import Globe from "./Globe";
 
 const Grid3 = () => {
   const variants = {
@@ -25,11 +21,9 @@ const Grid3 = () => {
         repeat: Infinity,
         repeatType: "reverse",
       }}
-      className="flex flex-1 w-full h-full min-h-24 dark:bg-dot-white/[0.2] rounded-lg bg-dot-black/[0.2] flex-col space-y-2"
+      className="flex flex-1 w-full h-full min-h-24 rounded-lg bg-dot-black/[0.2] flex-col space-y-2"
     >
-      <Suspense fallback={null}>
-        {/* <GlobeComp /> */}
-      </Suspense>
+      <Globe />
     </motion.div>
   );
 };
