@@ -63,7 +63,7 @@ export const InfiniteMovingCards = ({
       } else if (speed === "normal") {
         containerRef.current.style.setProperty("--animation-duration", "250s");
       } else {
-        containerRef.current.style.setProperty("--animation-duration", "500s");
+        containerRef.current.style.setProperty("--animation-duration", "300s");
       }
     }
   };
@@ -85,18 +85,18 @@ export const InfiniteMovingCards = ({
       >
         {items.map((item) => (
           <li
-            className="relative w-[200px] max-w-full shrink-0 rounded-4xl border bg-primaryColor border-secondaryColor p-2"
+            className="relative w-[225px] max-w-full shrink-0 rounded-2xl border-2 bg-primaryColor border-secondaryColor p-2"
             key={item.name}
           >
             <div className="flex justify-center items-center gap-2.5">
               <img
                 src={item.svg}
                 alt={item.name}
-                width={30}
-                height={30}
+                width={40}
+                height={40}
                 loading="lazy"
               />
-              <span className="relative text-center z-20 text-sm leading-[1.6] font-bold text-textColor">
+              <span className="relative text-center z-20 text-[1.1rem] leading-[1.6] font-bold text-textColor">
                 {item.name}
               </span>
             </div>
