@@ -36,7 +36,7 @@ const Hero = () => {
           handleClick={() => scrollToSection("projects")}
         />
       </div>
-      <Meteors number={50} />
+      <Meteors number={100} />
     </section>
   );
 };
