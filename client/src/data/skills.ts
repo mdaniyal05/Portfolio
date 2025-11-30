@@ -111,8 +111,4 @@ export const skills = [
     svg: "/hyprland.svg",
     name: "Hyprland",
   },
-  {
-    svg: "/godot.svg",
-    name: "Godot",
-  },
 ];

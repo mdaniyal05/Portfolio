@@ -9,18 +9,23 @@ const Skills = () => {
       <h1 className="text-textColor font-bold text-4xl">
         My <span className="text-secondaryColor">Skills</span>
       </h1>
-      <div className="flex items-center justify-center mt-5">
-        <div className="w-70 sm:w-80 md:w-150 flex justify-center items-center">
-          <div className="grid grid-cols-3 md:grid-cols-7 gap-4">
-            {skills.map((item, idx) => (
-              <div className="text-center" key={idx}>
-                <div className="p-4 w-20 h-20 bg-primaryColor border border-secondaryColor rounded-lg shadow-lg flex flex-col justify-center items-center">
-                  <img src={item.svg} alt={item.name} loading="lazy" />
-                </div>
-              </div>
-            ))}
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-3 mt-10">
+        {skills.map((item, idx) => (
+          <div
+            className="p-4 w-40 h-40 bg-primaryColor border border-secondaryColor rounded-lg shadow-lg flex flex-col justify-center items-center transition transform hover:scale-105 hover:bg-gray-600"
+            key={idx}
+          >
+            <img
+              src={item.svg}
+              alt={item.name}
+              className="mb-3"
+              width={75}
+              height={75}
+              loading="lazy"
+            />
+            <span className="text-gray-300">{item.name}</span>
           </div>
-        </div>
+        ))}
       </div>
     </section>
   );
