@@ -7,13 +7,13 @@ export default function Projects() {
       className="py-15 flex flex-col justify-center items-center min-h-screen"
       id="projects"
     >
-      <h1 className="heading text-textColor font-bold text-4xl text-center">
-        A Selection of <span className="text-secondaryColor">My Work</span>
+      <h1 className="heading text-textColor font-bold text-6xl text-center">
+        A Selection of My <span className="text-secondaryColor">Work</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-16">
+      <div className="grid grid-cols-1 lg:grid-cols-2 p-2 gap-16 mt-10">
         {projects.map((item) => (
           <div
-            className="lg:min-h-130 h-125 flex items-center justify-center sm:w-96 w-[80vw]"
+            className="h-120 flex items-center justify-center sm:w-96 w-[80vw]"
             key={item.id}
           >
             <PinContainer title={item.link} href={item.link}>
