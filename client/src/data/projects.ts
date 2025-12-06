@@ -38,19 +38,4 @@ export const projects = [
     link: "https://github.com/mdaniyal05/PixelQuest",
     github: "https://github.com/mdaniyal05/PixelQuest",
   },
-  {
-    id: 4,
-    title: "GameForge Store",
-    des: "An online store built for gaming enthusiasts to explore and purchase premium accessories through a sleek and responsive interface.",
-    img: "/gameforge.png",
-    iconLists: [
-      "/js.svg",
-      "/react.svg",
-      "/css.svg",
-      "/html.svg",
-      "/motion.svg",
-    ],
-    link: "https://game-forge-store.vercel.app",
-    github: "https://github.com/mdaniyal05/GameForge",
-  },
 ];
