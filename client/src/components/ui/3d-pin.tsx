@@ -26,16 +26,12 @@ export const PinContainer = ({
     setTransform("translate(-50%,-50%) rotateX(0deg) scale(1)");
   };
 
-  console.log(href);
-
   return (
-    <a
+    <div
       className={cn(
         "relative group/pin z-50  cursor-pointer",
         containerClassName
       )}
-      href={href}
-      target="_blank"
       onMouseEnter={onMouseEnter}
       onMouseLeave={onMouseLeave}
     >
@@ -55,16 +51,26 @@ export const PinContainer = ({
           <div className={cn(" relative z-50 ", className)}>{children}</div>
         </div>
       </div>
-      <PinPerspective title={title} />
-    </a>
+      <PinPerspective title={title} href={href} />
+    </div>
   );
 };
 
-export const PinPerspective = ({ title }: { title?: string }) => {
+export const PinPerspective = ({
+  title,
+  href,
+}: {
+  title?: string;
+  href?: string;
+}) => {
   return (
-    <motion.div className="pointer-events-none  w-96 h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-60 transition duration-500">
+    <motion.div className="w-96 h-80 flex items-center justify-center opacity-0 group-hover/pin:opacity-100 z-60 transition duration-500">
       <div className=" w-full h-full -mt-7 flex-none  inset-0">
-        <div className="absolute top-0 inset-x-0  flex justify-center">
+        <a
+          className="absolute top-0 inset-x-0  flex justify-center"
+          href={href}
+          target="_blank"
+        >
           <div className="relative flex space-x-2 items-center z-10 rounded-full bg-secondaryColor py-0.5 px-4 ring-1 ring-white/10 ">
             <span className="relative z-20 text-primaryColor text-xs font-bold inline-block py-0.5">
               {title}
@@ -72,8 +78,7 @@ export const PinPerspective = ({ title }: { title?: string }) => {
 
             <span className="absolute bottom-0 left-4.5 h-px w-[calc(100%-2.25rem)] bg-linear-to-r from-emerald-400/0 via-emerald-400/90 to-emerald-400/0 transition-opacity duration-500 group-hover/btn:opacity-40"></span>
           </div>
-        </div>
-
+        </a>
         <div
           style={{
             perspective: "1000px",
@@ -144,7 +149,6 @@ export const PinPerspective = ({ title }: { title?: string }) => {
             ></motion.div>
           </>
         </div>
-
         <>
           <motion.div className="absolute right-1/2 bottom-1/2 bg-linear-to-b from-transparent to-cyan-500 translate-y-3.5 w-px h-20 group-hover/pin:h-40 blur-[2px]" />
           <motion.div className="absolute right-1/2 bottom-1/2 bg-linear-to-b from-transparent to-cyan-500 translate-y-3.5 w-px h-20 group-hover/pin:h-40  " />
