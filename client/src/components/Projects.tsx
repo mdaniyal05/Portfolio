@@ -46,7 +46,7 @@ export default function Projects() {
                   {item.iconLists.map((icon, index) => (
                     <div
                       key={index}
-                      className="border rounded-full bg-primaryColor border-secondaryColor lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                      className="border-2 rounded-full bg-primaryColor border-secondaryColor lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
                       style={{
                         transform: `translateX(-${5 * index + 2}px)`,
                       }}
@@ -61,7 +61,7 @@ export default function Projects() {
                   ))}
                 </div>
                 <a href={item.github} target="_blank">
-                  <div className="w-10 h-10 cursor-pointer flex justify-center items-center bg-primaryColor rounded-lg border border-secondaryColor hover:bg-secondaryColor">
+                  <div className="w-10 h-10 cursor-pointer flex justify-center items-center bg-primaryColor rounded-lg border-2 border-secondaryColor hover:bg-secondaryColor">
                     <img
                       src="/github.svg"
                       alt="icons"

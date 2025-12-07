@@ -23,7 +23,7 @@ const items = [
       </span>
     ),
     header: <Grid1 />,
-    className: "lg:col-span-1",
+    className: "lg:col-span-1 border-2",
     icon: <FaHandsHelping className="h-4 w-4 text-secondaryColor" />,
   },
   {
@@ -35,7 +35,7 @@ const items = [
       </span>
     ),
     header: <Grid2 />,
-    className: "lg:col-span-1",
+    className: "lg:col-span-1 border-2",
     icon: <FaProjectDiagram className="h-4 w-4 text-secondaryColor" />,
   },
   {
@@ -47,7 +47,7 @@ const items = [
       </span>
     ),
     header: <Grid3 />,
-    className: "lg:col-span-1",
+    className: "lg:col-span-1 border-2",
     icon: <FaGlobe className="h-4 w-4 text-secondaryColor" />,
   },
   {
@@ -59,7 +59,7 @@ const items = [
       </span>
     ),
     header: <Grid4 />,
-    className: "lg:col-span-2",
+    className: "lg:col-span-2 border-2",
     icon: <FaLaptopCode className="h-4 w-4 text-secondaryColor" />,
   },
 
@@ -72,7 +72,7 @@ const items = [
       </span>
     ),
     header: <Grid5 />,
-    className: "md:col-span-1",
+    className: "md:col-span-1 border-2",
     icon: <GrTechnology className="h-4 w-4 text-secondaryColor" />,
   },
 ];
