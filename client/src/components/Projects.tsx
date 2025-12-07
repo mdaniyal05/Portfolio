@@ -41,7 +41,6 @@ export default function Projects() {
               >
                 {item.des}
               </p>
-
               <div className="flex items-center justify-between mt-7 mb-3">
                 <div className="flex items-center">
                   {item.iconLists.map((icon, index) => (

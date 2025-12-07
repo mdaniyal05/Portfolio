@@ -29,8 +29,8 @@ const Footer = () => {
           Copyright © {new Date().getFullYear()} Daniyal
         </p>
         <div className="flex items-center justify-center md:gap-3 gap-6 mt-10 md:mt-0">
-          {links.map((info) => (
-            <a href={info.link} target="_blank">
+          {links.map((info, idx) => (
+            <a href={info.link} target="_blank" key={idx}>
               <div
                 key={info.id}
                 className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-primaryColor rounded-lg border border-secondaryColor"

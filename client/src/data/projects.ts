@@ -31,6 +31,15 @@ export const projects = [
   },
   {
     id: 3,
+    title: "Editor Portfolio (Freelance)",
+    des: "A modern and dynamic portfolio website built for a professional video editor, showcasing projects, skills, and services with an engaging and responsive UI.",
+    img: "/editor.png",
+    iconLists: ["/nextjs.svg", "/ts.svg", "/tailwind.svg", "/motion.svg"],
+    link: "https://eshal-portfolio.vercel.app",
+    github: "https://github.com/mdaniyal05",
+  },
+  {
+    id: 4,
     title: "Pixel Quest",
     des: "Pixel Quest is a 2D platformer game, where player has to collect all the fruits to achieve victory while skillfully avoiding the pursuit of a relentless bat.",
     img: "/pixelquest.png",
