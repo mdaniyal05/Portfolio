@@ -7,7 +7,7 @@ export default function Projects() {
       className="py-15 flex flex-col justify-center items-center min-h-screen"
       id="projects"
     >
-      <h1 className="heading text-textColor font-bold text-6xl text-center">
+      <h1 className="heading text-textColor font-bold text-5xl text-center">
         A Selection of My <span className="text-secondaryColor">Work</span>
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 p-2 gap-16 mt-10">

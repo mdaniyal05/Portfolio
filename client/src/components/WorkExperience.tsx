@@ -7,7 +7,7 @@ const WorkExperience = () => {
       className="py-15 w-full flex flex-col justify-center items-center min-h-screen"
       id="experience"
     >
-      <h1 className="text-textColor font-bold text-6xl text-center">
+      <h1 className="text-textColor font-bold text-5xl text-center">
         My Work <span className="text-secondaryColor">Experience</span>
       </h1>
       <div className="w-full mt-10 grid grid-cols-1 gap-10">
