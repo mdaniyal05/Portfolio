@@ -12,7 +12,7 @@ const Footer = () => {
         </h1>
         <p className="text-textColor mt-10 my-5 text-center text-4xl">
           Connect with <span className="text-secondaryColor">ME</span> today.
-          Copy my email from the bento grid, and let’s explore how I can help{" "}
+          Copy my email, and let’s explore how I can help{" "}
           <span className="text-secondaryColor">YOU</span> grow your brand
           online.
         </p>

@@ -20,7 +20,7 @@ const Grid2 = () => {
       className="flex flex-1 justify-center items-center w-full h-full min-h-24 dark:bg-dot-white/[0.2] bg-dot-black/[0.2] flex-col space-y-2"
     >
       <Button
-        title={copied ? "Email is Copied!" : "Email"}
+        title={copied ? "Email Copied!" : "Email"}
         icon={<FaCopy />}
         position="left"
         handleClick={handleCopy}
