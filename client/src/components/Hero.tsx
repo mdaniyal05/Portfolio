@@ -1,5 +1,5 @@
 import Button from "./Button";
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaLocationArrow, FaFile } from "react-icons/fa6";
 import { Meteors } from "./ui/meteors";
 import { Spotlight } from "./ui/spotlight-new";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
@@ -10,6 +10,15 @@ const Hero = () => {
   const scrollToSection = (id: string) => {
     const section = document.getElementById(id);
     section?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = "/resume.docx";
+    link.download = "resume.docx";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -29,12 +38,21 @@ const Hero = () => {
           words={words}
           className="mt-4 font-normal text-base max-w-lg text-center mx-auto"
         />
-        <Button
-          position="right"
-          title="My work"
-          icon={<FaLocationArrow />}
-          handleClick={() => scrollToSection("projects")}
-        />
+        <div className="flex gap-5 justify-center items-center">
+          <Button
+            position="right"
+            title="My work"
+            icon={<FaLocationArrow />}
+            handleClick={() => scrollToSection("projects")}
+          />
+
+          <Button
+            position="right"
+            title="Resume"
+            icon={<FaFile />}
+            handleClick={handleDownload}
+          />
+        </div>
       </div>
       <Meteors number={100} />
     </section>
