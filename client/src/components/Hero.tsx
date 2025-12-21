@@ -3,6 +3,7 @@ import { FaLocationArrow, FaFile } from "react-icons/fa6";
 import { Meteors } from "./ui/meteors";
 import { Spotlight } from "./ui/spotlight-new";
 import { TextGenerateEffect } from "./ui/text-generate-effect";
+import { motion } from "motion/react";
 
 const words = "Hi! I'm Daniyal, a Full Stack Web Developer & Linux Geek";
 
@@ -31,9 +32,13 @@ const Hero = () => {
         <Spotlight />
       </div>
       <div className="flex flex-col items-center justify-center p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
-        <h1 className="text-4xl md:text-7xl font-semibold text-center bg-clip-text text-transparent bg-linear-to-b from-textColor to-secondaryColor bg-opacity-50">
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="text-4xl md:text-7xl font-semibold text-center bg-clip-text text-transparent bg-linear-to-b from-textColor to-secondaryColor bg-opacity-50"
+        >
           Transforming Ideas into Seamless User Experiences
-        </h1>
+        </motion.h1>
         <TextGenerateEffect
           words={words}
           className="mt-4 font-normal text-base max-w-lg text-center mx-auto"
