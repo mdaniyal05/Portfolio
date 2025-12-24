@@ -43,7 +43,7 @@ const Hero = () => {
           words={words}
           className="mt-4 font-normal text-base max-w-lg text-center mx-auto"
         />
-        <div className="flex gap-5 justify-center items-center">
+        <div className="flex flex-col justify-center items-center md:flex-row md:gap-5">
           <Button
             position="right"
             title="My work"
