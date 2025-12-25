@@ -15,8 +15,8 @@ function App() {
         <Hero />
         <BentoGridComp />
         <Projects />
-        <WorkExperience />
         <Skills />
+        <WorkExperience />
         <Footer />
       </div>
     </main>
