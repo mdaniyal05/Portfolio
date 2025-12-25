@@ -36,7 +36,6 @@ export default function Projects() {
               <p
                 className="font-semibold text-textColor text-[1rem]"
                 style={{
-                  color: "#BEC1DD",
                   margin: "1vh 0",
                 }}
               >

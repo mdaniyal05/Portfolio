@@ -39,8 +39,8 @@ const Hero = () => {
         <img
           src="/coding.gif"
           alt="Coding"
-          width={200}
-          height={200}
+          width={175}
+          height={175}
           className="mb-10 shadow-[0_0_0_3px_#000000_inset] p-2 bg-transparent border-2 border-secondaryColor rounded-lg font-bold transform hover:-translate-y-1 transition duration-400"
         />
         <motion.h1
