@@ -24,7 +24,7 @@ const Hero = () => {
 
   return (
     <section
-      className="py-15 flex justify-center items-center min-h-screen"
+      className="pb-15 flex justify-center items-center min-h-screen"
       id="hero"
     >
       <div className="hidden sm:block">
@@ -35,9 +35,9 @@ const Hero = () => {
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          className="text-4xl md:text-7xl font-semibold text-center bg-clip-text text-transparent bg-linear-to-b from-textColor to-secondaryColor bg-opacity-50"
+          className="text-4xl md:text-6xl text-center font-bold bg-clip-text text-transparent bg-linear-to-b from-textColor to-secondaryColor bg-opacity-50"
         >
-          Transforming Ideas into Seamless User Experiences
+          SOFTWARE ENGINEER
         </motion.h1>
         <TextGenerateEffect
           words={words}

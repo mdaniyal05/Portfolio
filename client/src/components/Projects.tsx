@@ -28,7 +28,7 @@ export default function Projects() {
                 </div>
               </div>
 
-              <h1 className="font-bold lg:text-2xl text-secondaryColor md:text-xl text-base">
+              <h1 className="font-bold lg:text-2xl text-accentColor md:text-xl text-base">
                 {item.title}
               </h1>
 
