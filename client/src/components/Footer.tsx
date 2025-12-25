@@ -16,10 +16,7 @@ const Footer = () => {
     <footer className="w-full pt-15 pb-10" id="footer">
       <div className="flex flex-col items-center">
         <p className="text-textColor mt-10 my-5 text-center text-4xl">
-          Connect with <span className="text-secondaryColor">ME</span> today.
-          Copy my email, and let’s explore how I can help{" "}
-          <span className="text-secondaryColor">YOU</span> grow your brand
-          online.
+          CONNECT WITH <span className="text-secondaryColor">ME</span> TODAY.
         </p>
         <div className="flex flex-col justify-center items-center md:flex-row md:gap-5">
           <a href="https://mail.google.com/mail" target="_blank">

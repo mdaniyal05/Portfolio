@@ -6,7 +6,7 @@ const Skills = () => {
       className="py-15 w-full flex flex-col justify-center items-center gap-5 min-h-screen"
       id="skills"
     >
-      <h1 className="text-textColor font-bold text-5xl">
+      <h1 className="text-textColor font-bold text-5xl text-center">
         My <span className="text-secondaryColor">Skills</span> &{" "}
         <span className="text-secondaryColor">Tools</span>
       </h1>
