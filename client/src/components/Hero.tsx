@@ -22,6 +22,10 @@ const Hero = () => {
     document.body.removeChild(link);
   };
 
+  <button className="shadow-[0_0_0_3px_#000000_inset] px-6 py-2 bg-transparent border border-black dark:border-white dark:text-white text-black rounded-lg font-bold transform hover:-translate-y-1 transition duration-400">
+    Figma Outline
+  </button>;
+
   return (
     <section
       className="pb-15 flex justify-center items-center min-h-screen"
@@ -31,7 +35,14 @@ const Hero = () => {
         <Spotlight />
         <Spotlight />
       </div>
-      <div className="flex flex-col items-center justify-center p-4 max-w-7xl  mx-auto relative z-10  w-full pt-20 md:pt-0">
+      <div className="flex flex-col items-center justify-center p-4 max-w-7xl mx-auto relative z-10 w-full pt-20 md:pt-0">
+        <img
+          src="/coding.gif"
+          alt="Coding"
+          width={200}
+          height={200}
+          className="mb-10 shadow-[0_0_0_3px_#000000_inset] p-2 bg-transparent border-2 border-secondaryColor rounded-lg font-bold transform hover:-translate-y-1 transition duration-400"
+        />
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

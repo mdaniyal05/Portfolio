@@ -1,28 +1,41 @@
-import { FaLocationArrow } from "react-icons/fa6";
+import { FaCopy, FaLocationArrow } from "react-icons/fa6";
 import Button from "./Button";
 import { links } from "@/data/footer";
+import { useState } from "react";
 
 const Footer = () => {
+  const [copied, setCopied] = useState(false);
+
+  const handleCopy = () => {
+    const text = "mdaniyal5454@gmail.com";
+    navigator.clipboard.writeText(text);
+    setCopied(true);
+  };
+
   return (
     <footer className="w-full pt-15 pb-10" id="footer">
       <div className="flex flex-col items-center">
-        <h1 className="lg:max-w-[45vw] text-textColor text-4xl text-center">
-          Looking to strengthen{" "}
-          <span className="text-secondaryColor">YOUR</span> digital presence?
-        </h1>
         <p className="text-textColor mt-10 my-5 text-center text-4xl">
           Connect with <span className="text-secondaryColor">ME</span> today.
           Copy my email, and let’s explore how I can help{" "}
           <span className="text-secondaryColor">YOU</span> grow your brand
           online.
         </p>
-        <a href="https://mail.google.com/mail" target="_blank">
+        <div className="flex flex-col justify-center items-center md:flex-row md:gap-5">
+          <a href="https://mail.google.com/mail" target="_blank">
+            <Button
+              title="Get in Touch"
+              icon={<FaLocationArrow />}
+              position="right"
+            />
+          </a>
           <Button
-            title="Get in Touch"
-            icon={<FaLocationArrow />}
-            position="right"
+            title={copied ? "Email Copied!" : "Email"}
+            icon={<FaCopy />}
+            position="left"
+            handleClick={handleCopy}
           />
-        </a>
+        </div>
       </div>
       <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
         <p className="md:text-base text-sm md:font-normal font-light text-accentColor">

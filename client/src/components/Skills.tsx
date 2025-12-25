@@ -7,7 +7,8 @@ const Skills = () => {
       id="skills"
     >
       <h1 className="text-textColor font-bold text-5xl">
-        My <span className="text-secondaryColor">Skills</span>
+        My <span className="text-secondaryColor">Skills</span> &{" "}
+        <span className="text-secondaryColor">Tools</span>
       </h1>
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-7 gap-3 mt-10">
         {skills.map((item, idx) => (

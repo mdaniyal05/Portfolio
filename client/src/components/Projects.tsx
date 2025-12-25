@@ -8,7 +8,8 @@ export default function Projects() {
       id="projects"
     >
       <h1 className="heading text-textColor font-bold text-5xl text-center">
-        A Selection of My <span className="text-secondaryColor">Work</span>
+        A <span className="text-secondaryColor">Selection</span> of My{" "}
+        <span className="text-secondaryColor">Work</span>
       </h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 p-2 gap-16 mt-10">
         {projects.map((item) => (
