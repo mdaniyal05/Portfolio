@@ -15,11 +15,11 @@ import Grid5 from "./Grid5";
 
 const items = [
   {
-    title: "Collaboration",
+    title: "About Me",
     description: (
       <span>
-        Collaboration is at the heart of my work - I prioritize strong client
-        partnerships and open communication to achieve the best results.
+        I'm a Full Stack Web Developer and linux nerd based in Pakistan. I love
+        and enjoy building stuff.
       </span>
     ),
     header: <Grid1 />,
@@ -30,8 +30,7 @@ const items = [
     title: "Team Up",
     description: (
       <span>
-        Ready to create something amazing together? Partner with me on your next
-        big idea - together, we’ll make it happen.
+        Partner with me on your next big idea. Together, we’ll make it happen.
       </span>
     ),
     header: <Grid2 />,
@@ -42,8 +41,7 @@ const items = [
     title: "Open-Ended",
     description: (
       <span>
-        I'm flexible with different time zones - let's not let distance stand in
-        the way of bringing our ideas to life.
+        I'm flexible with different time zones. I can work from anywhere.
       </span>
     ),
     header: <Grid3 />,
@@ -54,8 +52,9 @@ const items = [
     title: "Building Websites",
     description: (
       <span>
-        I develop robust, scalable, and intuitive web applications optimized for
-        performance and usability.
+        I focus on building functional, scalable, and user friendly web
+        applications. I work with modern technologies like MERN & PERN Stack to
+        create clean and maintainable solutions.
       </span>
     ),
     header: <Grid4 />,
@@ -67,8 +66,8 @@ const items = [
     title: "Ardent",
     description: (
       <span>
-        Passionate and Driven by curiosity about exploring and mastering
-        cutting-edge technologies and tools.
+        Driven by curiosity about exploring and mastering cutting edge
+        technologies and tools.
       </span>
     ),
     header: <Grid5 />,
