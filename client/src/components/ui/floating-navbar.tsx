@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
-import { useState, type JSX } from "react";
+import { useEffect, useState, type JSX } from "react";
 import {
   motion,
   AnimatePresence,
@@ -21,25 +21,16 @@ export const FloatingNav = ({
 }) => {
   const { scrollYProgress } = useScroll();
 
-  const [visible, setVisible] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   useMotionValueEvent(scrollYProgress, "change", (current) => {
-    // Check if current is not undefined and is a number
-    if (window.innerWidth <= 768) {
-      setVisible(true);
-    } else {
-      if (typeof current === "number") {
-        const direction = current! - scrollYProgress.getPrevious()!;
+    if (typeof current === "number") {
+      const direction = current! - scrollYProgress.getPrevious()!;
 
-        if (scrollYProgress.get() < 0.05) {
-          setVisible(false);
-        } else {
-          if (direction < 0) {
-            setVisible(true);
-          } else {
-            setVisible(false);
-          }
-        }
+      if (direction < 0) {
+        setVisible(true);
+      } else {
+        setVisible(false);
       }
     }
   });
