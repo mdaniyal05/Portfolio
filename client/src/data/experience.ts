@@ -6,4 +6,11 @@ export const workExperience = [
     className: "md:col-span-2",
     thumbnail: "/experience.svg",
   },
+  {
+    id: 2,
+    title: "Junior Software Engineer (Full Stack)",
+    desc: "Working as a Full Stack Developer at Wolke Consultancy, developing and maintaining web applications using modern technologies. Collaborating with cross-functional teams to deliver scalable solutions and improve system performance.",
+    className: "md:col-span-2",
+    thumbnail: "/experience.svg",
+  },
 ];
