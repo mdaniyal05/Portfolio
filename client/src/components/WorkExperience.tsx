@@ -32,7 +32,7 @@ const WorkExperience = () => {
               </div>
             </div>
             <p className="text-sm border-2 font-bold border-secondaryColor rounded-full text-textColor px-2 py-0.5">
-              Sep 2025 - Present
+              {card.time}
             </p>
           </div>
         ))}
